@@ -171,7 +171,7 @@ plt.title("1928 Understanding: Vitamin C Prevents Scurvy", fontsize=14, pad=20)
 2. **DAG 2 (Misguided):** Acid kills bacteria - wrong understanding  
 3. **DAG 3 (1928):** Vitamin C prevents scurvy - complete and correct
 4. **Optional:** Add a little professional styling to the DAGs to make them more visually appealing (example: use nice fill colors and/or enclose the text in the ellipse completely).
-:::
+::: 
 
 ### Professional Quality Standards
 
