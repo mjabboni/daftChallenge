@@ -93,9 +93,6 @@ Your task is to recreate these three historical DAGs using DAFT, making them vis
 
 **Your Task:** Recreate this DAG showing the relationship between lemons and scurvy prevention.
 
-**Reference Image:**
-![](https://raw.githubusercontent.com/flyaflya/persuasive/642288ea5f79050c05801c3d127084ac0f361a01/images/scurvy2.png)
-
 ```{python}
 #| label: dag-1-1747
 #| echo: false
@@ -119,19 +116,17 @@ plt.title("Simplified Lind's Model of the 1747 Understanding", fontsize=14, pad=
 
 **Your Task:** Recreate this DAG showing the incorrect understanding of the data generating process.
 
-**Reference Image:**
-![](https://raw.githubusercontent.com/flyaflya/persuasive/8aaffd0a3c967d0a26f506232f998130847be3e8/images/scurvy.png)
 
 ```{python}
 #| label: dag-2-misguided
 #| echo: false
 
 pgm = daft.PGM(dpi=150, alternate_style="outer")
-pgm.add_node("acid", "Acid" + r" $(X)$", 1, 1, aspect=3, scale=1.1,
+pgm.add_node("acid", "Acid" + r" $(X)$", 1, 3.5, aspect=3, scale=1.1,
              plot_params={'facecolor': 'lightcoral', 'edgecolor': 'darkred', 'linewidth': 2, 'alpha': 0.8})
-pgm.add_node("bacteria", "Bacteria" + r" $(Y)$", 3.25, 1, aspect=3, scale=1.1,
+pgm.add_node("bacteria", "Bacteria" + r" $(Y)$", 3.25, 2.5, aspect=3, scale=1.1,
              plot_params={'facecolor': 'skyblue', 'edgecolor': 'blue', 'linewidth': 2, 'alpha': 0.8})
-pgm.add_node("scurvy", "Scurvy" + r" $(Z)$", 5.5, 1, aspect=3, scale=1.1,
+pgm.add_node("scurvy", "Scurvy" + r" $(Z)$", 5.5, 1.5, aspect=3, scale=1.1,
              plot_params={'facecolor': 'thistle', 'edgecolor': 'purple', 'linewidth': 2, 'alpha': 0.8})
 pgm.add_edge("acid", "bacteria")
 pgm.add_edge("bacteria", "scurvy")
@@ -145,8 +140,6 @@ plt.title("Misguided Belief: Acid Causes Scurvy", fontsize=14, pad=20)
 
 **Your Task:** Recreate this DAG showing the complete and correct understanding of the scurvy data generating process.
 
-**Reference Image:**
-![](https://raw.githubusercontent.com/flyaflya/persuasive/main/images/scurvy3.png)
 
 ```{python}
 #| label: dag-3-1928
